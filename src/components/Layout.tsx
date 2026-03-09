@@ -79,7 +79,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <footer className="bg-navy text-primary-foreground">
         <div className="container mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="font-display text-xl font-bold mb-4">Ghana<span className="text-gold">Rentals</span></h3>
+            <h3 className="font-display text-xl font-bold mb-4">Meshbee<span className="text-gold"> Estates</span></h3>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
               Your trusted partner for affordable rental housing across Ghana. We help individuals and families find the perfect home.
             </p>
