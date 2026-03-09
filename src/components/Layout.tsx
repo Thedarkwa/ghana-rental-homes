@@ -96,7 +96,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <h4 className="font-display font-semibold mb-4">Contact Us</h4>
             <div className="flex flex-col gap-2 text-sm text-primary-foreground/70">
               <span className="flex items-center gap-2"><Phone className="w-4 h-4" /> +233 24 000 0000</span>
-              <span className="flex items-center gap-2"><Mail className="w-4 h-4" /> info@ghanarentals.com</span>
+              <span className="flex items-center gap-2"><Mail className="w-4 h-4" /> info@meshbeeestates.com</span>
               <span className="flex items-center gap-2"><MapPin className="w-4 h-4" /> Accra, Greater Accra Region</span>
             </div>
           </div>
