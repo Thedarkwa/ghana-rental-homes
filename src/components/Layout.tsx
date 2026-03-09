@@ -30,8 +30,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <header className="sticky top-0 z-50 bg-background/95 backdrop-blur border-b">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-lg gold-gradient flex items-center justify-center font-display text-accent-foreground font-bold text-lg">GR</div>
-            <span className="font-display text-xl font-bold text-navy">Ghana<span className="text-gold">Rentals</span></span>
+            <div className="w-10 h-10 rounded-lg gold-gradient flex items-center justify-center font-display text-accent-foreground font-bold text-lg">ME</div>
+            <span className="font-display text-xl font-bold text-navy">Meshbee<span className="text-gold"> Estates</span></span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">
