@@ -87,7 +87,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-display font-semibold mb-1 text-card-foreground">Email</h3>
-                  <p className="text-muted-foreground">info@ghanarentals.com</p>
+                  <p className="text-muted-foreground">info@meshbeeestates.com</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
