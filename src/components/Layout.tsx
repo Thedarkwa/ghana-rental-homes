@@ -102,7 +102,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </div>
         </div>
         <div className="border-t border-primary-foreground/10 text-center py-4 text-xs text-primary-foreground/50">
-          © {new Date().getFullYear()} GhanaRentals. All rights reserved.
+          © {new Date().getFullYear()} Meshbee Estates. All rights reserved.
         </div>
       </footer>
     </div>
