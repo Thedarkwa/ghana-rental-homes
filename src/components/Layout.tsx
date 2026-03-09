@@ -20,7 +20,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="container mx-auto px-4 py-2 flex justify-between items-center">
           <div className="flex items-center gap-6">
             <span className="flex items-center gap-1"><Phone className="w-3 h-3" /> +233 24 000 0000</span>
-            <span className="flex items-center gap-1"><Mail className="w-3 h-3" /> info@ghanarentals.com</span>
+            <span className="flex items-center gap-1"><Mail className="w-3 h-3" /> info@meshbeeestates.com</span>
           </div>
           <span className="flex items-center gap-1"><MapPin className="w-3 h-3" /> Accra, Ghana</span>
         </div>
@@ -30,8 +30,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <header className="sticky top-0 z-50 bg-background/95 backdrop-blur border-b">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-lg gold-gradient flex items-center justify-center font-display text-accent-foreground font-bold text-lg">GR</div>
-            <span className="font-display text-xl font-bold text-navy">Ghana<span className="text-gold">Rentals</span></span>
+            <div className="w-10 h-10 rounded-lg gold-gradient flex items-center justify-center font-display text-accent-foreground font-bold text-lg">ME</div>
+            <span className="font-display text-xl font-bold text-navy">Meshbee<span className="text-gold"> Estates</span></span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">
@@ -79,7 +79,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <footer className="bg-navy text-primary-foreground">
         <div className="container mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="font-display text-xl font-bold mb-4">Ghana<span className="text-gold">Rentals</span></h3>
+            <h3 className="font-display text-xl font-bold mb-4">Meshbee<span className="text-gold"> Estates</span></h3>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
               Your trusted partner for affordable rental housing across Ghana. We help individuals and families find the perfect home.
             </p>
@@ -96,13 +96,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <h4 className="font-display font-semibold mb-4">Contact Us</h4>
             <div className="flex flex-col gap-2 text-sm text-primary-foreground/70">
               <span className="flex items-center gap-2"><Phone className="w-4 h-4" /> +233 24 000 0000</span>
-              <span className="flex items-center gap-2"><Mail className="w-4 h-4" /> info@ghanarentals.com</span>
+              <span className="flex items-center gap-2"><Mail className="w-4 h-4" /> info@meshbeeestates.com</span>
               <span className="flex items-center gap-2"><MapPin className="w-4 h-4" /> Accra, Greater Accra Region</span>
             </div>
           </div>
         </div>
         <div className="border-t border-primary-foreground/10 text-center py-4 text-xs text-primary-foreground/50">
-          © {new Date().getFullYear()} GhanaRentals. All rights reserved.
+          © {new Date().getFullYear()} Meshbee Estates. All rights reserved.
         </div>
       </footer>
     </div>
