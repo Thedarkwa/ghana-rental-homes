@@ -1,4 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
+import meshLogo from "@/assets/meshlogo.png";
 import { Menu, X, Phone, Mail, MapPin } from "lucide-react";
 import { useState } from "react";
 
