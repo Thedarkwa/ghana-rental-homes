@@ -27,7 +27,7 @@ export default function PropertyCard({ property }: { property: Property }) {
           <span className="font-display font-bold text-xl text-gold">GH₵{property.price}<span className="text-sm font-normal text-muted-foreground">/mo</span></span>
           <div className="flex gap-2">
             <a
-              href={`https://wa.me/233240000000?text=${whatsappMsg}`}
+              href={`https://wa.me/233542839287?text=${whatsappMsg}`}
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-lg bg-green-500 text-accent-foreground hover:bg-green-600 transition-colors"

@@ -87,7 +87,7 @@ export default function Index() {
           <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground mb-4">Ready to Find Your New Home?</h2>
           <p className="text-primary-foreground/70 mb-8 max-w-lg mx-auto">Get in touch today and let us help you find the perfect rental property in Ghana.</p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="https://wa.me/233240000000" target="_blank" rel="noopener noreferrer" className="px-8 py-4 rounded-xl bg-green-500 text-accent-foreground font-semibold hover:bg-green-600 transition-colors">
+            <a href="https://wa.me/233542839287" target="_blank" rel="noopener noreferrer" className="px-8 py-4 rounded-xl bg-green-500 text-accent-foreground font-semibold hover:bg-green-600 transition-colors">
               Chat on WhatsApp
             </a>
             <Link to="/contact" className="px-8 py-4 rounded-xl gold-gradient text-accent-foreground font-semibold hover:opacity-90 transition-opacity">

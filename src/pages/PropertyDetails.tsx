@@ -48,7 +48,7 @@ export default function PropertyDetails() {
               <span className="text-muted-foreground">/month</span>
             </div>
             <a
-              href={`https://wa.me/233240000000?text=${whatsappMsg}`}
+              href={`https://wa.me/233542839287?text=${whatsappMsg}`}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full flex items-center justify-center gap-2 py-4 rounded-xl bg-green-500 text-accent-foreground font-semibold text-lg hover:bg-green-600 transition-colors mb-4"

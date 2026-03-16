@@ -7,7 +7,9 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success("Message sent! We'll get back to you soon.");
+    const msg = encodeURIComponent(`Name: ${form.name}\nPhone: ${form.phone}\nEmail: ${form.email}\n\n${form.message}`);
+    window.open(`https://wa.me/233542839287?text=${msg}`, "_blank");
+    toast.success("Redirecting you to WhatsApp...");
     setForm({ name: "", phone: "", email: "", message: "" });
   };
 
