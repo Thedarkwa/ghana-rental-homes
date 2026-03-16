@@ -96,7 +96,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-display font-semibold mb-1 text-card-foreground">Office</h3>
-                  <p className="text-muted-foreground">No. 15, Ring Road East, Osu, Accra</p>
+                  <p className="text-muted-foreground">No. 88 Fertilizer Rd., Century, Accra, Ghana</p>
                 </div>
               </div>
             </div>
