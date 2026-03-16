@@ -32,7 +32,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2">
             <img src={meshLogo} alt="Meshbee Estates" className="h-10 w-auto" />
-            <span className="font-display text-xl font-bold text-navy">Meshbee<span className="text-gold"> Estates</span></span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">
