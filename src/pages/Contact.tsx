@@ -78,7 +78,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-display font-semibold mb-1 text-card-foreground">Phone</h3>
-                  <p className="text-muted-foreground">+233 24 000 0000</p>
+                  <p className="text-muted-foreground">0551797530 / 0542839287</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
