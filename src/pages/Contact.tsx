@@ -78,7 +78,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-display font-semibold mb-1 text-card-foreground">Phone</h3>
-                  <p className="text-muted-foreground">+233 24 000 0000</p>
+                  <p className="text-muted-foreground">0551797530 / 0542839287</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -96,13 +96,13 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-display font-semibold mb-1 text-card-foreground">Office</h3>
-                  <p className="text-muted-foreground">No. 15, Ring Road East, Osu, Accra</p>
+                  <p className="text-muted-foreground">No. 88 Fertilizer Rd., Century, Accra, Ghana</p>
                 </div>
               </div>
             </div>
 
             <a
-              href="https://wa.me/233240000000"
+              href="https://wa.me/233551797530"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-3 w-full py-4 rounded-xl bg-green-500 text-accent-foreground font-semibold text-lg hover:bg-green-600 transition-colors"
