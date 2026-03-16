@@ -1,18 +1,41 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import meshLogo from "@/assets/meshlogo.png";
 import { Menu, X, Phone, Mail, MapPin } from "lucide-react";
 import { useState } from "react";
 
 const navLinks = [
-  { label: "Home", path: "/" },
-  { label: "Properties", path: "/properties" },
-  { label: "Services", path: "/services" },
-  { label: "Contact", path: "/contact" },
+  { label: "Home", path: "/", hash: "" },
+  { label: "Properties", path: "/properties", hash: "" },
+  { label: "Services", path: "/", hash: "#services" },
+  { label: "Contact", path: "/", hash: "#contact" },
 ];
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleNavClick = (link: typeof navLinks[0]) => {
+    setMenuOpen(false);
+    if (link.hash) {
+      if (location.pathname === "/") {
+        // Already on home, just scroll
+        document.querySelector(link.hash)?.scrollIntoView({ behavior: "smooth" });
+      } else {
+        // Navigate home then scroll
+        navigate("/");
+        setTimeout(() => {
+          document.querySelector(link.hash)?.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      }
+    }
+  };
+
+  const isActive = (link: typeof navLinks[0]) => {
+    if (link.path === "/properties") return location.pathname === "/properties";
+    if (link.hash) return false;
+    return location.pathname === "/" && !location.hash;
+  };
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -36,13 +59,23 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.map(link => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className={`font-body font-medium transition-colors hover:text-gold ${location.pathname === link.path ? "text-gold" : "text-foreground"}`}
-              >
-                {link.label}
-              </Link>
+              link.hash ? (
+                <button
+                  key={link.label}
+                  onClick={() => handleNavClick(link)}
+                  className={`font-body font-medium transition-colors hover:text-gold text-foreground`}
+                >
+                  {link.label}
+                </button>
+              ) : (
+                <Link
+                  key={link.label}
+                  to={link.path}
+                  className={`font-body font-medium transition-colors hover:text-gold ${isActive(link) ? "text-gold" : "text-foreground"}`}
+                >
+                  {link.label}
+                </Link>
+              )
             ))}
             <Link to="/admin" className="ml-2 px-4 py-2 rounded-lg bg-navy text-primary-foreground font-medium text-sm hover:bg-navy-light transition-colors">
               Admin
@@ -57,14 +90,24 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         {menuOpen && (
           <div className="md:hidden border-t bg-background px-4 pb-4">
             {navLinks.map(link => (
-              <Link
-                key={link.path}
-                to={link.path}
-                onClick={() => setMenuOpen(false)}
-                className={`block py-3 font-medium border-b border-border last:border-0 ${location.pathname === link.path ? "text-gold" : "text-foreground"}`}
-              >
-                {link.label}
-              </Link>
+              link.hash ? (
+                <button
+                  key={link.label}
+                  onClick={() => handleNavClick(link)}
+                  className="block w-full text-left py-3 font-medium border-b border-border last:border-0 text-foreground"
+                >
+                  {link.label}
+                </button>
+              ) : (
+                <Link
+                  key={link.label}
+                  to={link.path}
+                  onClick={() => setMenuOpen(false)}
+                  className={`block py-3 font-medium border-b border-border last:border-0 ${isActive(link) ? "text-gold" : "text-foreground"}`}
+                >
+                  {link.label}
+                </Link>
+              )
             ))}
             <Link to="/admin" onClick={() => setMenuOpen(false)} className="block py-3 font-medium text-gold">
               Admin Dashboard
@@ -88,7 +131,17 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <h4 className="font-display font-semibold mb-4">Quick Links</h4>
             <div className="flex flex-col gap-2 text-sm text-primary-foreground/70">
               {navLinks.map(link => (
-                <Link key={link.path} to={link.path} className="hover:text-gold transition-colors">{link.label}</Link>
+                link.hash ? (
+                  <button
+                    key={link.label}
+                    onClick={() => handleNavClick(link)}
+                    className="text-left hover:text-gold transition-colors"
+                  >
+                    {link.label}
+                  </button>
+                ) : (
+                  <Link key={link.label} to={link.path} className="hover:text-gold transition-colors">{link.label}</Link>
+                )
               ))}
             </div>
           </div>
