@@ -1,73 +1,150 @@
-# Welcome to your Lovable project
+Meshbee Estates Website
+Overview
 
-## Project info
+Meshbee Estates is a real estate platform designed to help people easily find affordable rental housing such as single rooms, chamber and hall, one-bedroom apartments, and two-bedroom apartments.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+The website provides users with a simple way to browse properties, view detailed information, and contact Meshbee Estates for rental inquiries.
 
-## How can I edit this code?
+This project is designed to improve accessibility to housing information while giving Meshbee Estates an online presence.
 
-There are several ways of editing your application.
+Features
+Property Listings
 
-**Use Lovable**
+Users can browse available properties with details such as:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Property images
 
-Changes made via Lovable will be committed automatically to this repo.
+Location
 
-**Use your preferred IDE**
+Price
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Property type
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Property Details
 
-Follow these steps:
+Each listing provides more information including:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Property description
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Amenities
 
-# Step 3: Install the necessary dependencies.
-npm i
+Photo gallery
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+Contact options
+
+Property Search
+
+Users can filter properties by:
+
+Property type
+
+Price range
+
+Location
+
+Contact System
+
+Users can contact Meshbee Estates through:
+
+Contact form
+
+Phone call
+
+WhatsApp messaging
+
+Responsive Design
+
+The website is designed to work across:
+
+Mobile devices
+
+Tablets
+
+Desktop computers
+
+Project Structure
+src
+ ├── components
+ ├── pages
+ │    ├── Home
+ │    ├── Properties
+ │    ├── PropertyDetails
+ │    ├── About
+ │    └── Contact
+ ├── assets
+ ├── data
+ └── services
+Tech Stack
+Frontend
+
+React
+
+Tailwind CSS
+
+React Router
+
+TypeScript
+
+Build Tool
+
+Vite
+
+Version Control
+
+Git & GitHub
+
+Hosting
+
+Vercel
+
+Installation
+
+Clone the repository
+
+git clone https://github.com/yourusername/meshbee-estates.git
+
+Navigate into the project folder
+
+cd meshbee-estates
+
+Install dependencies
+
+npm install
+
+Start the development server
+
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+Open the application in your browser
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+http://localhost:5173
+Usage
 
-**Use GitHub Codespaces**
+Browse available rental properties.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Click on a property to view detailed information.
 
-## What technologies are used for this project?
+Contact Meshbee Estates for inquiries or bookings.
 
-This project is built with:
+Future Improvements
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Admin dashboard for managing properties
 
-## How can I deploy this project?
+Property booking system
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+User accounts
 
-## Can I connect a custom domain to my Lovable project?
+Online rent payment
 
-Yes, you can!
+Property search filters
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Google Maps integration
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Author
+
+Darkwa Kelvin Ofori
+
+
+License
+
+This project is open-source and available under the MIT License.
