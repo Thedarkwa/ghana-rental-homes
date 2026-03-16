@@ -20,10 +20,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <div className="bg-navy text-primary-foreground text-sm hidden md:block">
         <div className="container mx-auto px-4 py-2 flex justify-between items-center">
           <div className="flex items-center gap-6">
-            <span className="flex items-center gap-1"><Phone className="w-3 h-3" /> +233 24 000 0000</span>
+            <span className="flex items-center gap-1"><Phone className="w-3 h-3" /> 0551797530 / 0542839287</span>
             <span className="flex items-center gap-1"><Mail className="w-3 h-3" /> info@meshbeeestates.com</span>
           </div>
-          <span className="flex items-center gap-1"><MapPin className="w-3 h-3" /> Accra, Ghana</span>
+          <span className="flex items-center gap-1"><MapPin className="w-3 h-3" /> No. 88 Fertilizer Rd., Century, Accra, Ghana</span>
         </div>
       </div>
 
