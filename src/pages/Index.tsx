@@ -258,7 +258,7 @@ export default function Index() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-green-500 text-accent-foreground font-semibold hover:bg-green-600 transition-colors"
             >
-              <MessageCircle className="w-5 h-5" /> Contact Meshbee Estates
+              <img src={whatsappLogo} alt="WhatsApp" className="w-5 h-5" /> Contact Meshbee Estates
             </a>
             <Link
               to="/properties"
