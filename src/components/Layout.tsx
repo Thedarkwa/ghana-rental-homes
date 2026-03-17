@@ -1,6 +1,6 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import meshLogo from "@/assets/meshlogo.png";
-import { Menu, X, Phone, Mail, MapPin } from "lucide-react";
+import { Menu, X, Phone, Mail, MapPin, Facebook, Instagram, Twitter } from "lucide-react";
 import { useState } from "react";
 
 const navLinks = [
@@ -120,12 +120,23 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
       {/* Footer */}
       <footer className="bg-navy text-primary-foreground">
-        <div className="container mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="container mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="font-display text-xl font-bold mb-4">Meshbee<span className="text-gold"> Estates</span></h3>
+            <img src={meshLogo} alt="Meshbee Estates" className="h-10 w-auto mb-4 brightness-200" />
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
               Your trusted partner for affordable rental housing across Ghana. We help individuals and families find the perfect home.
             </p>
+            <div className="flex gap-3 mt-4">
+              <a href="#" className="w-9 h-9 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-gold transition-colors">
+                <Facebook className="w-4 h-4" />
+              </a>
+              <a href="#" className="w-9 h-9 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-gold transition-colors">
+                <Instagram className="w-4 h-4" />
+              </a>
+              <a href="#" className="w-9 h-9 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-gold transition-colors">
+                <Twitter className="w-4 h-4" />
+              </a>
+            </div>
           </div>
           <div>
             <h4 className="font-display font-semibold mb-4">Quick Links</h4>
@@ -146,11 +157,20 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </div>
           </div>
           <div>
+            <h4 className="font-display font-semibold mb-4">Our Services</h4>
+            <div className="flex flex-col gap-2 text-sm text-primary-foreground/70">
+              <span>Rental Housing</span>
+              <span>Property Listing</span>
+              <span>Property Management</span>
+              <span>Tenant Screening</span>
+            </div>
+          </div>
+          <div>
             <h4 className="font-display font-semibold mb-4">Contact Us</h4>
             <div className="flex flex-col gap-2 text-sm text-primary-foreground/70">
               <span className="flex items-center gap-2"><Phone className="w-4 h-4" /> 0551797530 / 0542839287</span>
               <span className="flex items-center gap-2"><Mail className="w-4 h-4" /> info@meshbeeestates.com</span>
-              <span className="flex items-center gap-2"><MapPin className="w-4 h-4" /> No. 88 Fertilizer Rd., Century, Accra, Ghana</span>
+              <span className="flex items-center gap-2"><MapPin className="w-4 h-4" /> No. 88 Fertilizer Rd., Century, Accra</span>
             </div>
           </div>
         </div>
