@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import {
   ArrowRight, Home, Building, Building2, Castle, List, Settings,
-  Phone, Mail, MapPin, MessageCircle, Shield, DollarSign, MapPinned,
+  Phone, Mail, MapPin, Shield, DollarSign, MapPinned,
   ThumbsUp, Star, ChevronLeft, ChevronRight
 } from "lucide-react";
+import whatsappLogo from "@/assets/whatsapp-logo.png";
 import { useState, useCallback, useEffect } from "react";
 import { properties } from "@/data/properties";
 import PropertyCard from "@/components/PropertyCard";
@@ -257,7 +258,7 @@ export default function Index() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-green-500 text-accent-foreground font-semibold hover:bg-green-600 transition-colors"
             >
-              <MessageCircle className="w-5 h-5" /> Contact Meshbee Estates
+              <img src={whatsappLogo} alt="WhatsApp" className="w-5 h-5" /> Contact Meshbee Estates
             </a>
             <Link
               to="/properties"
@@ -316,7 +317,7 @@ export default function Index() {
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-3 w-full py-5 rounded-xl bg-green-500 text-accent-foreground font-semibold text-lg hover:bg-green-600 transition-colors"
             >
-              <MessageCircle className="w-6 h-6" /> Chat on WhatsApp
+              <img src={whatsappLogo} alt="WhatsApp" className="w-6 h-6" /> Chat on WhatsApp
             </a>
 
             <div className="rounded-2xl overflow-hidden border h-64">

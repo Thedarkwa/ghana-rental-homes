@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { MapPin, MessageCircle } from "lucide-react";
+import { MapPin } from "lucide-react";
+import whatsappLogo from "@/assets/whatsapp-logo.png";
 import type { Property } from "@/data/properties";
 
 export default function PropertyCard({ property }: { property: Property }) {
@@ -33,7 +34,7 @@ export default function PropertyCard({ property }: { property: Property }) {
               className="p-2 rounded-lg bg-green-500 text-accent-foreground hover:bg-green-600 transition-colors"
               title="WhatsApp Inquiry"
             >
-              <MessageCircle className="w-4 h-4" />
+              <img src={whatsappLogo} alt="WhatsApp" className="w-4 h-4" />
             </a>
             <Link
               to={`/properties/${property.id}`}
