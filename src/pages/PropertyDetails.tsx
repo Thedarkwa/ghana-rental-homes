@@ -1,5 +1,6 @@
 import { useParams, Link } from "react-router-dom";
-import { ArrowLeft, MapPin, MessageCircle, Check } from "lucide-react";
+import { ArrowLeft, MapPin, Check } from "lucide-react";
+import whatsappLogo from "@/assets/whatsapp-logo.png";
 import { properties } from "@/data/properties";
 
 export default function PropertyDetails() {

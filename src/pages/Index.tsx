@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
 import {
   ArrowRight, Home, Building, Building2, Castle, List, Settings,
-  Phone, Mail, MapPin, MessageCircle, Shield, DollarSign, MapPinned,
+  Phone, Mail, MapPin, Shield, DollarSign, MapPinned,
   ThumbsUp, Star, ChevronLeft, ChevronRight
 } from "lucide-react";
+import whatsappLogo from "@/assets/whatsapp-logo.png";
 import { useState, useCallback, useEffect } from "react";
 import { properties } from "@/data/properties";
 import PropertyCard from "@/components/PropertyCard";

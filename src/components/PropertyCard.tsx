@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { MapPin, MessageCircle } from "lucide-react";
+import { MapPin } from "lucide-react";
+import whatsappLogo from "@/assets/whatsapp-logo.png";
 import type { Property } from "@/data/properties";
 
 export default function PropertyCard({ property }: { property: Property }) {
