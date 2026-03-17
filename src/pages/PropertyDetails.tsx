@@ -54,7 +54,7 @@ export default function PropertyDetails() {
               rel="noopener noreferrer"
               className="w-full flex items-center justify-center gap-2 py-4 rounded-xl bg-green-500 text-accent-foreground font-semibold text-lg hover:bg-green-600 transition-colors mb-4"
             >
-              <MessageCircle className="w-5 h-5" /> Inquire on WhatsApp
+              <img src={whatsappLogo} alt="WhatsApp" className="w-5 h-5" /> Inquire on WhatsApp
             </a>
             <Link
               to="/contact"

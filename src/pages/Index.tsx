@@ -317,7 +317,7 @@ export default function Index() {
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-3 w-full py-5 rounded-xl bg-green-500 text-accent-foreground font-semibold text-lg hover:bg-green-600 transition-colors"
             >
-              <MessageCircle className="w-6 h-6" /> Chat on WhatsApp
+              <img src={whatsappLogo} alt="WhatsApp" className="w-6 h-6" /> Chat on WhatsApp
             </a>
 
             <div className="rounded-2xl overflow-hidden border h-64">
