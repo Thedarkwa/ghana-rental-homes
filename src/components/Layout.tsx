@@ -1,6 +1,6 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import meshLogo from "@/assets/meshlogo.png";
-import { Menu, X, Phone, Mail, MapPin } from "lucide-react";
+import { Menu, X, Phone, Mail, MapPin, Facebook, Instagram, Twitter } from "lucide-react";
 import { useState } from "react";
 
 const navLinks = [
