@@ -86,9 +86,6 @@ export default function Index() {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-navy/40 group-hover:bg-navy/20 transition-colors" />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <cat.icon className="w-12 h-12 text-accent-foreground drop-shadow-lg" />
-                  </div>
                 </div>
                 <div className="p-5 text-center">
                   <h3 className="font-display font-semibold text-lg mb-1 text-card-foreground">{cat.label}</h3>
