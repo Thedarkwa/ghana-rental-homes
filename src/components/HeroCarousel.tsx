@@ -65,7 +65,7 @@ export default function HeroCarousel() {
       {/* Content */}
       <div className="relative z-20 h-full flex items-center">
         <div className="container mx-auto px-4">
-          <div className="max-w-2xl" key={current}>
+          <div className="max-w-2xl">
             <span className="inline-block px-4 py-1.5 rounded-full bg-gold/20 text-gold text-sm font-semibold mb-6 animate-fade-in-up">
               Trusted Real Estate in Ghana
             </span>
