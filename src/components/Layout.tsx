@@ -78,9 +78,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 </Link>
               )
             ))}
-            <Link to="/admin" className="ml-2 px-4 py-2 rounded-lg bg-navy text-primary-foreground font-medium text-sm hover:bg-navy-light transition-colors">
-              Admin
-            </Link>
           </nav>
 
           <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
