@@ -6,6 +6,9 @@ import hero2 from "@/assets/hero-2.jpg";
 import hero3 from "@/assets/hero-3.jpg";
 import hero4 from "@/assets/hero-4.jpg";
 import hero5 from "@/assets/hero-5.jpg";
+import hero6 from "@/assets/hero-6.jpg";
+import hero7 from "@/assets/hero-7.jpg";
+import hero8 from "@/assets/hero-8.jpg";
 
 const slides = [
   { image: hero1, alt: "Modern apartments in Accra" },
@@ -13,6 +16,9 @@ const slides = [
   { image: hero3, alt: "Residential estate in Ghana" },
   { image: hero4, alt: "Luxury villa at twilight" },
   { image: hero5, alt: "Premium bedroom with city view" },
+  { image: hero6, alt: "Luxury apartment complex with pool" },
+  { image: hero7, alt: "Modern townhouse estate" },
+  { image: hero8, alt: "Spacious contemporary living room" },
 ];
 
 export default function HeroCarousel() {
@@ -59,7 +65,7 @@ export default function HeroCarousel() {
       {/* Content */}
       <div className="relative z-20 h-full flex items-center">
         <div className="container mx-auto px-4">
-          <div className="max-w-2xl" key={current}>
+          <div className="max-w-2xl">
             <span className="inline-block px-4 py-1.5 rounded-full bg-gold/20 text-gold text-sm font-semibold mb-6 animate-fade-in-up">
               Trusted Real Estate in Ghana
             </span>
