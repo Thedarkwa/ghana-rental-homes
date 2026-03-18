@@ -107,9 +107,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 </Link>
               )
             ))}
-            <Link to="/admin" onClick={() => setMenuOpen(false)} className="block py-3 font-medium text-gold">
-              Admin Dashboard
-            </Link>
           </div>
         )}
       </header>
