@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
 
 @layer base {
   :root {
@@ -50,8 +50,8 @@
     --sidebar-border: 218 40% 25%;
     --sidebar-ring: 42 65% 55%;
 
-    --font-display: 'Cinzel', serif;
-    --font-body: 'Marcellus', serif;
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'DM Sans', sans-serif;
   }
 
   .dark {
